@@ -21,6 +21,7 @@ Auth::routes();
 
 Route::get('/', [App\Http\Controllers\frontend\frontendController::class, 'index']);
 Route::get('/aboutus', [App\Http\Controllers\frontend\frontendController::class, 'aboutus'])->name('aboutus');
+Route::get('/services', [App\Http\Controllers\frontend\frontendController::class, 'services'])->name('services');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
